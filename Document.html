@@ -1,0 +1,379 @@
+<html>
+<head>
+<style>
+body {
+  min-width: 250px;
+  color: #000;
+  background-color: transparent;
+  font-family: Arial; 
+  line-height: 1.7;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 250px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #000;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+section article {
+  color: #000;
+  margin: 10px;
+  font-size: 1em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #fff;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 820px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 210px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -10px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    min-width: 230px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav id="navbar">
+  <header>C Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#Basic_knowledge"
+        >Basic Knowledge</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#C_and_C++">C and C++</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Constants">Constants</a>
+    </li>
+    <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+    <li><a class="nav-link" href="#If_Else_Statement">If Else Statement</a></li>
+    <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <artical>
+        <p>
+          C is a procedural programming language it means it follows step by step process. It was initially developed by Dennis MacAlistair Ritchie to develop the UNIX operating system, At AT&T Bell laboratories of USA in 1972. During the 1980s C gradually gained popularity. Nowadays, it is one of the most widely used programming languages. C has many powers like it is simple, reliable, stretchy, portable and easy to use.
+        </p>
+      </artical>
+    </section>
+    <section class="main-section" id="Basic_knowledge">
+      <header>Basic Knowledge</header>
+      <article>
+        <p>
+         Learning C is also learning about how your computer works. C programmers can have a deeper understanding of the way code affects systems, and find learning other programming languages easier as a result.</p>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>
+          A general understanding of the Internet and the World Wide Web (WWW).
+        </li>
+        <li>Basic Variable Types and Operators.</li>
+        <li>
+          Some programming experience. If you are new to programming. </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="C_and_C++">
+      <header>C and C++ </header>
+      <article>
+        <p>
+          While both C and C++ may sound similar, their features and usage are different. C is a procedural programming language and does not support objects and classes. C++ is an enhanced version of C programming with object-oriented programming support.
+        </p>
+       <p> Some of the similarities in C and C++ programming languages are:</p>
+<ul>
+<li>Both have a similar syntax.</li>
+  <li>Their compilation is similar.</li>
+  <li>Both languages follow the same concept of a stack, heap, and static variable.</li>
+    </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <article>    
+    <p>    
+      To get started with writing C, open the Turbo C++ and write your first "Hello world" C code:</p>
+        <code>
+          #include<stdio.h>
+          int main()
+          {
+          printf("Hello, World!");
+          return 0;
+          }
+        </code>
+          <p>
+          Press ctrl+f9 to run the program.
+          </p>
+      </article>
+    </section>
+      
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>An entity that may vary during program execution is called a variable. Variable names are names  which are given to the locations in memory. These locations can contain integer, character constants.</p>
+
+Rules for constructing variable names of all types are same. These rules are as follows -
+<ul>
+<li>
+  The first character in the variable name must be an alphabet or underscore.</li>
+  <li>No commas or blanks are allowed within a variable name.</li>
+  <li>No special symbol can be used in a variable except underscore.</li>
+<li>A variable name is any combination of 1 to 31 alphabets, digits or underscores or we can say  the maximum allowable length of a variable name is 31.</li>
+          </ul>
+        </article>
+      </section>
+      
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+<p>
+  A Constant is an entity that doesn't change during the execution of a program.</p>
+
+          <b>Types of constants</b>
+          <p>Primary Constants </p>
+          <ul>
+            <li>Real and Floating point Constant.</li>
+  <li>Integer Constant.</li>
+            <li>Character Constant. </li>                                  </ul>                      
+            <p>Secondary Constants </p>
+          <ul>
+     <li>Array</li>
+     <li>Pointer</li>
+     <li>Structure</li>
+     <li>enum</li>
+     <li>union</li>
+          </ul>
+        <p>Details of these constants</p>
+
+            <p>Real and Floating Point constants</p>
+
+Real constant must have one digit in it and must have a decimal point either it is positive or negative no commas and blanks are allowed in real constants.
+
+          <p>Integer Constants</p>
+
+An integer constant refers to a sequence of digits and it must have at least one digit either positive or negative, if no sign precedes an integer constant is assumed to be positive. commas and blanks are not allowed in integer constant. -32768 to 32768 is the range allowed for integer constant.
+
+          <p>Character constants</p>
+
+Character constant is a single alphabet and a single digit enclosed within single inverted commas. Both inverted commas should point to the left.
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+<p>Each variable in C has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it. Let us briefly describe them one by one:</p>
+Following are the examples of some very common data types used in C:
+<ul>
+<li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li>
+  <li>int: As the name suggests, an int variable is used to store an integer.</li>
+<li>float: It is used to store decimal numbers (numbers with floating point value) with single precision.</li>
+<li>double: It is used to store decimal numbers (numbers with floating point value) with double precision. </li>
+          </ul>
+        </article>
+      </section>
+       <section class="main-section" id="If_Else_Statement">
+         <header>If Else Statement</header>
+         <article>
+          <p> If else statements in C is also used to control the program flow based on some condition, only the difference is: it's used to execute some statement code block if the expression is evaluated to true, otherwise executes else statement code block.</p>
+           <p>The basic format of if else statement is: </p>
+           <p>Syntex :</p>
+<code>
+if(test_expression)
+{
+   //execute your code
+}
+else
+{
+   //execute your code
+}
+           </code>
+          
+           <p>Example :</p>
+    <code>       
+  #include<stdio.h>
+
+void main()
+{
+  int a, b;
+
+  printf("Please enter the value for a:");
+  scanf("%d", &a);
+
+  printf("\nPlease enter the value for b:");
+  scanf("%d", &b);
+
+  if (a > b) {  
+    printf("\n a is greater");
+  } else {  
+    printf("\n b is greater");
+  }
+}
+           </code>
+           <p>Output:</p>
+           Please enter the value for a:7
+           Please enter the value for b:5
+           a is greater_
+         </article>
+        </section>
+        <section class="main-section" id="While_Statement">
+          <header>While Statement</header>
+          <article>
+            <p>while loop is a most basic loop in C programming. while loop has one control condition, and executes as long the condition is true. </p>
+          The basic format of while loop statement is:
+            <p>Syntex :</p>
+<code>
+  While (condition)
+  {
+   statement(s);
+   Incrementation;
+   }
+            </code>
+            <p>Example :</p>
+            <code>
+            #include<stdio.h>
+ 
+int main ()
+{
+   /* local variable Initialization */
+   int n = 1,times=5;
+
+   /* while loops execution */
+   while( n <= times )
+   {
+      printf("C while loops: %d\n", n);
+      n++;
+   }
+ 
+   return 0;
+}
+                   </code>
+              <p>Output :</p>
+            <code> 
+              C while loops: 1
+              C while loops: 2
+              C while loops: 3
+              C while loops: 4
+              C while loops: 5   
+              </code>
+</article>
+            </section>
+            <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+               <ul>
+        <li>
+          All the documentation in this page is taken from diffrent sites including 
+          <a href="https://www.w3schools.in/c-programming/decision-making/if-else" target="_blank">w3schools</a>
+        </li>
+      </ul>
+    </article>
+            </section>
+        </main>
+</body>
+</html>
